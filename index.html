@@ -11,6 +11,7 @@
 		<script src="google.fastbutton.js"></script>
 		<script src="jquery.google.fastbutton.js"></script>
 		<script src="https://ricostacruz.com/jquery.transit/jquery.transit.min.js" type="text/javascript"></script>
+		<script src = "main.js"></script>
 
 		<!-- 1. load the webfonts -->
 		<link rel="stylesheet" type="text/css" href="JPGPhosphatekit.css">
@@ -84,174 +85,44 @@
 							$(".sc").removeAttr("style");
 						});	
 					}
-				})
-			})
+				});
+
+			});
 		</script>
 	</head>
 	<body>
 		<iframe class = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.357966228914!2d-75.16938798465507!3d39.95574869146994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c63213bcc8bf%3A0xa0d655132dc7b92f!2sThree+Discs%2C+One+Lacking!5e0!3m2!1sen!2sus!4v1491675466099"></iframe>
-		<div id = "home" class = "sc selected">
-			<ul class = "navbar">
-				<li class = "left"><img src = "images/location.svg"></li>
-				<li class = "center"><img class = "link slideup" page-load = "adventure-list" src = "images/AAbtn.svg"></li>
-				<li class = "right"><img class = "link slideup" page-load = "profiles" src = "images/Profile.svg"></li>
-			</ul>
-		</div>
-		<div id = "adventure-list" class = "sc">
-			<div class = "ad-list-header">
-				<img class="back link backdown close" page-load="home" src="images/Close_Blue.png" alt="">
-				<h1 class="PhosphateRRInline">Adventure List</h1>
+		<div id = "start" class = "sc selected">
+			<div class="logo">
+				<img src="images/Type_logo.png" alt="Art Advenures Logo">						
 			</div>
-			<div class = "ad-list-locations">
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
-				<div class = "location-container">
-					<img src="images/City_Hall_detail_Rogers_2016-40-425x425.jpg" alt="William Penn" height="80" width="80">
-					<div class = "location-details">
-						<p>William Penn (1890, cast 1892)</p>
-						<p>by Alexander Milne Calder (1846 - 1923)</p>
-						<p>.05 mi</p>
-					</div>
-				</div>
+			<div class="cardtitle">
+				<h2 class="PhosphateRRInline">Begin<br>Your<br>Adventure</h2>
+				<a class="back link backdown" page-load="home"></a>
+			</div>
+			<div class="startbtn">
+				<img class="link slideup" page-load="player-choice" src="images/AAStartbtn.png">
 			</div>
 		</div>
-		<div id = "profiles" class = "sc">
-			<div class = "profiles-header">
-				<img class="back link backdown close" page-load="home" src="images/Close_Blue.png" alt="">
-				<h1 class="PhosphateRRInline">Profiles</h1>
+		<div id = "player-choice" class = "sc">
+			<img class="back link backdown close" page-load="start" src="images/Close_Blue.png" alt="">
+			<div class = "cardtitle player-header">
+				<h2 class="PhosphateRRInline">Who Is Playing Today?</h2>
 			</div>
-			<div class = "profiles-list">
-				<div class = "profile-row">
-					<div class = "profile-container">
-						<img src="images/purple_monster.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Rocket Copy.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Keystonepink.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
+			<div class = "player-carousel">
+				<div class = "items">
+					<img class="arrow-prev" aria-hidden="true" src = "images/leftarrow.png">
+					<img class = "active-slide slide special-height" src="images/New_Player.png" alt="New Player">
+					<img class = "slide" src="images/Keystone.png" alt="Keystone">
+					<img class = "slide" src="images/Keystonepink.png" alt="Pink Keystone">
+					<img class = "slide" src="images/monster.png" alt="Green Monster">
+					<img class = "slide" src="images/purple_monster.png" alt="Purple Monster">
+					<img class = "slide" src="images/Rocket_Copy.png" alt="Rocket">
+					<img class="arrow-next" aria-hidden="true" src = "images/rightarrow.png">
 				</div>
-				<div class = "profile-row">
-					<div class = "profile-container">
-						<img src="images/Keystone.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/monster.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/monster.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-				</div>
-				<div class = "profile-row">
-					<div class = "profile-container">
-						<img src="images/Rocket Copy.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Keystone.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/purple_monster.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-				</div>
-				<div class = "profile-row">
-					<div class = "profile-container">
-						<img src="images/purple_monster.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Rocket Copy.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Keystonepink.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-				</div>
-				<div class = "profile-row">
-					<div class = "profile-container">
-						<img src="images/purple_monster.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Rocket Copy.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-					<div class = "profile-container">
-						<img src="images/Keystonepink.png">
-						<h3>Douglas</h3>
-						<h3><span class = "size-emphasis">48</span> pts</h3>
-					</div>
-				</div>
+			</div>
+			<div class="startbtn">
+				<img src="images/dstartbtn.png">
 			</div>
 		</div>
 	</body>
