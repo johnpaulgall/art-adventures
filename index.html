@@ -88,6 +88,10 @@
 				});
 
 			});
+			 $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
 		</script>
 	</head>
 	<body>
@@ -112,17 +116,76 @@
 			<div class = "player-carousel">
 				<div class = "items">
 					<img class="arrow-prev" aria-hidden="true" src = "images/leftarrow.png">
-					<img class = "active-slide slide special-height" src="images/New_Player.png" alt="New Player">
-					<img class = "slide" src="images/Keystone.png" alt="Keystone">
-					<img class = "slide" src="images/Keystonepink.png" alt="Pink Keystone">
-					<img class = "slide" src="images/monster.png" alt="Green Monster">
-					<img class = "slide" src="images/purple_monster.png" alt="Purple Monster">
-					<img class = "slide" src="images/Rocket_Copy.png" alt="Rocket">
+					<img class = "active-slide slide special-height link slideup" page-load="avatar-choice" src="images/New_Player.png" alt="New Player">
+					<img class = "slide" src="images/Keystone_text.png" alt="Keystone">
+					<img class = "slide" src="images/Keystonepink_text.png" alt="Pink Keystone">
+					<img class = "slide" src="images/monster_text.png" alt="Green Monster">
+					<img class = "slide" src="images/purple_monster_text.png" alt="Purple Monster">
+					<img class = "slide" src="images/Rocket_text.png" alt="Rocket">
 					<img class="arrow-next" aria-hidden="true" src = "images/rightarrow.png">
 				</div>
 			</div>
 			<div class="startbtn">
 				<img src="images/dstartbtn.png">
+			</div>
+		</div>
+		<div id = "avatar-choice" class = "sc">
+			<img class="back link backdown close" page-load="player-choice" src="images/Close_Blue.png" alt="">
+			<div class = "cardtitle change player-header">
+				<h2 class="PhosphateRRInline player1">Player 1</h2>
+			</div>
+			<div class = "cardbody player-header">
+				<h3 class="PhosphateRRInline">Choose<br>your<br>avatar</h3>
+			</div>
+			<div class = "player-carousel override">
+				<div class = "items">
+					<img class="arrow-prev" aria-hidden="true" src = "images/leftarrow.png">
+					<img class = "active-slide slide" src="images/Rocket_Copy.png" alt="Rocket">
+					<img class = "slide" src="images/Keystone.png" alt="Keystone">
+					<img class = "slide" src="images/Keystonepink.png" alt="Pink Keystone">
+					<img class = "slide link slideup" page-load="avatar-edit" " src="images/monster.png" alt="Green Monster">
+					<img class = "slide" src="images/purple_monster.png" alt="Purple Monster">
+					<img class="arrow-next" aria-hidden="true" src = "images/rightarrow.png">
+				</div>
+			</div>
+			<div class="startbtn">
+				<img src="images/select_btn.png">
+			</div>
+		</div>
+		<div id = "avatar-edit" class = "sc">
+			<img class="back link backdown close" page-load="avatar-choice" src="images/Close_Blue.png" alt="">
+			<div class = "cardtitle change player-header">
+				<h2 class="PhosphateRRInline player1">Player 1</h2>
+			</div>
+			<div class="cardbody player-header">
+			    <form>
+			        <div class="group">
+			            <input type="text" required>
+			            <span class="highlight"></span>
+			            <span class="bar"></span>
+			            <label>Name</label>
+			        </div>
+			        <div class="group">
+			            <input type="date" class="datepicker">
+			            <span class="highlight"></span>
+			            <span class="bar"></span>
+			            <label>Date of Birth</label>
+			        </div>
+			    </form>
+			</div>
+			<div class = "player-carousel override">
+				<div class = "items">
+					<!-- <img class="arrow-prev" aria-hidden="true" src = "images/leftarrow.png"> -->
+					<img class = "active-slide slide" src="images/Rocket_Copy.png" alt="Rocket">
+					<img class = "slide" src="images/Keystone.png" alt="Keystone">
+					<img class = "slide" src="images/Keystonepink.png" alt="Pink Keystone">
+					<img class = "slide" src="images/monster.png" alt="Green Monster">
+					<img class = "slide" src="images/purple_monster.png" alt="Purple Monster">
+					<!-- <img class="arrow-next" aria-hidden="true" src = "images/rightarrow.png"> -->
+				</div>
+			</div>
+			<div class="startbtn">
+				<img src="images/select_btn.png">
 			</div>
 		</div>
 	</body>

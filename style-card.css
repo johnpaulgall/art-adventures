@@ -86,7 +86,9 @@ body{
 #adventure-list,
 #profiles,
 #start,
-#player-choice {
+#player-choice, 
+#avatar-choice,
+#avatar-edit {
 	margin-top: 0;
 	margin-bottom: 8px;
 	margin-left: 8px;
@@ -116,7 +118,7 @@ body{
 }
 
 h1 {
-	font-size: 36px;
+	font-size: 64px;
 	text-align: center;
 	line-height: 44px;
 	padding: 12px;
@@ -176,7 +178,15 @@ p {
 	height: 65px;
 }
 
-h3 {
+h2 {
+	font-size: 48px;
+	margin: 0;
+}
+h3{
+	font-size: 36px;
+	margin: 0;
+}
+h5 {
 	font-size: 14px;
 	margin: 0;
 }
@@ -210,9 +220,19 @@ h3 {
 	height: 179px;
 }
 
-h2 {
-	font-size: 48px;
-	margin: 0;
+.change {
+	margin-top: 0px;
+	padding: 0px;
+	height: 43px;
+}
+
+.cardbody {
+	text-align: center;
+	margin-top: 10px;
+	padding: 12px;
+	line-height: 59px;
+	color: #006C90;
+	height: 179px;
 }
 
 .startbtn {
@@ -229,6 +249,10 @@ h2 {
 	border: none;
 }
 
+.player1{
+	border-bottom: 1px solid gray;
+}
+
 .player-carousel {
 	position: relative;
 	height: 265px;
@@ -240,20 +264,20 @@ h2 {
 .arrow-next {
 	height: 60px;
 	float: right;
-	margin-top: 90.5px;
+	margin-top: 75px;
 	margin-right: 10px;
 }
 .arrow-prev {
 	height: 60px;
 	float: left;
-	margin-top: 90.5px;
+	margin-top: 75px;
 	margin-left: 10px;
 }
 
 .slide{
-	height: 143px;
+	height: 158px;
  	display: none;
- 	margin-top: 49px;
+ 	margin-top: 35px;
 }
 
 .active-slide{
@@ -264,6 +288,101 @@ h2 {
 	height: 200px;
  	margin-top: 18.5px;
 }
+/*"http://scotch.io/tutorials/css/google-material-design-input-boxes-in-css3"*/
+/* form starting stylings ------------------------------- */
+.group            { 
+  position:relative;
+  margin-top: 25px; 
+  margin-bottom:25px; 
+}
+input, .datepicker {
+font-family: 'Roboto';	
+  font-size:18px;
+  padding:17px 10px 4px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #20C2AE;
+}
+input:focus         { outline:none; }
+
+/* LABEL ======================================= */
+label                {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:0px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label        {
+  top:-25px;
+  font-size:14px;
+  color:#006C90;
+}
+
+/* BOTTOM BARS ================================= */
+.bar    { position:relative; display:block; width:315px; }
+.bar:before, .bar:after     {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#20C2AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#20C2AE; }
+  to    { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#20C2AE; }
+  to    { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#20C2AE; }
+  to    { width:0; background:transparent; }
+}
 
 @media(max-width: 375px) {
 	.startbtn img {
@@ -272,6 +391,9 @@ h2 {
 
 	.player-carousel {
 		height: 241px;
+	}
+	.override{
+		height: 198px;
 	}
 
 @media(max-width: 354px) {
