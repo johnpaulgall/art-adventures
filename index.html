@@ -86,12 +86,7 @@
 						});	
 					}
 				});
-
 			});
-			 $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
 		</script>
 	</head>
 	<body>
@@ -119,14 +114,15 @@
 					<img class = "active-slide slide special-height link slideup" page-load="avatar-choice" src="images/New_Player.png" alt="New Player">
 					<img class = "slide" src="images/Keystone_text.png" alt="Keystone">
 					<img class = "slide" src="images/Keystonepink_text.png" alt="Pink Keystone">
-					<img class = "slide" src="images/monster_text.png" alt="Green Monster">
+					<img id = "clickable" class = "slide unchecked" src="images/monster_text.png" alt="Green Monster">
 					<img class = "slide" src="images/purple_monster_text.png" alt="Purple Monster">
 					<img class = "slide" src="images/Rocket_text.png" alt="Rocket">
 					<img class="arrow-next" aria-hidden="true" src = "images/rightarrow.png">
 				</div>
 			</div>
+			<!-- This btn will need to change to active, and link to story intro -->
 			<div class="startbtn">
-				<img src="images/dstartbtn.png">
+				<img class = "link slideup" page-load="video-choice" src="images/dstartbtn.png">
 			</div>
 		</div>
 		<div id = "avatar-choice" class = "sc">
@@ -163,7 +159,7 @@
 			            <input type="text" required>
 			            <span class="highlight"></span>
 			            <span class="bar"></span>
-			            <label>Name</label>
+			            <label>User Name</label>
 			        </div>
 			        <div class="group">
 			            <input type="date" class="datepicker">
@@ -184,9 +180,46 @@
 					<img class="arrow-next arrow-edit" aria-hidden="true" src = "images/rightarrow.png">
 				</div>
 			</div>
+			<!-- http://demos.flowplayer.org/scripting/filereader.html# -->
 			<div class="startbtn">
-				<img src="images/select_btn.png">
+				<img class = "back link backdown" page-load="player-choice" src="images/select_btn.png">
 			</div>
+		</div>
+		<div id="video-choice" class="sc">
+		    <img class="back link backdown close" page-load="player-choice" src="images/Close_Blue.png" alt="">
+		    <div class="cardtitle change player-header">
+		        <h2 class="PhosphateRRInline player1">The story</h2>
+		    </div>
+		    <div class="cardbody player-header">
+		        <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/OjXNhjKxtRE" frameborder="0" allowfullscreen></iframe></div>
+		    </div>
+		    <div class="startbtn">
+				<img class = "link slideup" page-load="player-onboard" src="images/select_btn.png">
+			</div>
+		</div>
+		<div id = "player-onboard" class = "sc">
+			<div class="onboard">
+			<div class="link slideup next" page-load="player-onboard2"></div>
+				<img src="images/onboard_1.png" alt="Green Monster onboarding">
+			</div>
+			<div class="overlay"></div>
+			<ul class = "navbar">
+				<li class = "left"><img src = "images/location.svg"></li>
+				<li class = "center"><img class = "link slideup" page-load = "adventure-list" src = "images/AAbtn.svg"></li>
+				<li class = "right"><img class = "link slideup" page-load = "profiles" src = "images/Profile.svg"></li>
+			</ul>
+		</div>
+		<div id = "player-onboard2" class = "sc">
+			<div class="onboard ontwo">
+			<div class="link slideup nexttwo" page-load="player-onboard3"></div>
+				<img src="images/onboard_2.png" alt="Green Monster onboarding">
+			</div>
+			<div class="overlay"></div>
+			<ul class = "navbar">
+				<li class = "left"><img src = "images/location.svg"></li>
+				<li class = "center"><img class = "link slideup" page-load = "adventure-list" src = "images/AAbtn.svg"></li>
+				<li class = "right"><img class = "link slideup" page-load = "profiles" src = "images/Profile.svg"></li>
+			</ul>
 		</div>
 	</body>
 </html>
