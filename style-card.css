@@ -514,12 +514,17 @@ input:focus ~ .highlight {
 		margin-top: 20px;
 	}
 
+.editstartbtn img {
+	margin-top: 215px;
+}
+
 	.player-carousel {
 		height: 241px;
 	}
 	.override{
 		height: 198px;
 	}
+}	
 
 @media(max-width: 354px) {
 	h1 {
