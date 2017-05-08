@@ -232,12 +232,12 @@ h5 {
 }
 
 .next {
+	position: absolute;
     height: 25px;
     width: 55px;
     border: 1px solid red;
     right: 67px;
     margin-top: 253px;
-    position: absolute;
 }
 
 .nexttwo {
@@ -247,7 +247,6 @@ h5 {
     border: 1px solid red;
     right: 77px;
     margin-top: 296px;
-    position: absolute;
     z-index: 120;
 }
 
@@ -342,7 +341,7 @@ h5 {
 }
 
 .contbtn img {
-	margin-top: 215px;
+	margin-top: 250px;
 }
 
 .player-header {
