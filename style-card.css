@@ -337,6 +337,14 @@ h5 {
 	height: 72px;
 }
 
+.editbtn img {
+		margin-top: 20px;
+}
+
+.contbtn img {
+	margin-top: 215px;
+}
+
 .player-header {
 	border: none;
 }
@@ -515,6 +523,10 @@ input:focus ~ .highlight {
 	}
 
 .editbtn img {
+		margin-top: 20px;
+	}
+
+.contbtn img {
 	margin-top: 215px;
 }
 
