@@ -16,6 +16,8 @@ body{
 .PhosphateRRInline {
 	font-family: PhosphateRRInline;
 	font-weight: lighter;
+	color: #006C90;
+
 }
 
 .sc{
@@ -103,12 +105,13 @@ body{
 	background: linear-gradient(131.49deg, rgba(255,255,255,0.72) 0%, #FFFCF8 100%);
 }
 
-#player-onboard, #player-onboard2, #player-onboard3, #player-onboard4 {
+#player-onboard, #player-onboard2, #player-onboard3, #player-onboard4, #pop-nav {
 	bottom: 77px;
 	background-color: rgba(0,0,0,0.3);
-	-moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+	animation: fadein 1.5s;
+	-moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
 }
 
 .overlay {
@@ -118,10 +121,10 @@ body{
     width: 375px;
     bottom: -82px;
     z-index: 100;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s; /* Firefox */
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+    -o-animation: fadein 1.5s; /* Opera */
 }
 
 .ad-list-header,
@@ -206,7 +209,11 @@ h2 {
 }
 h3{
 	font-size: 36px;
-	margin: 0;
+	text-align: center;
+	line-height: 44px;
+	padding: 12px;
+	color: #006C90;
+	margin: 0
 }
 h5 {
 	font-size: 14px;
@@ -272,10 +279,10 @@ h5 {
 .onboard img {
 	height: 507px;
 	margin-top: 120px;
-	    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+	    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
 @keyframes fadein {
     from {
@@ -449,6 +456,13 @@ h5 {
 	left:0;
 	width:100%;
 	height:100%;
+}
+
+.popup img {
+    position: absolute;
+    width: calc(100% - 100px);
+    bottom: 300px;
+    left: 50px;
 }
 
 
