@@ -103,7 +103,7 @@ body{
 	background: linear-gradient(131.49deg, rgba(255,255,255,0.72) 0%, #FFFCF8 100%);
 }
 
-#player-onboard, #player-onboard2 {
+#player-onboard, #player-onboard2, #player-onboard3, #player-onboard4 {
 	bottom: 77px;
 	background-color: rgba(0,0,0,0.3);
 	-moz-animation: fadein 2s; /* Firefox */
@@ -250,7 +250,25 @@ h5 {
     z-index: 120;
 }
 
+.nextthree {
+    position: absolute;
+    height: 25px;
+    width: 55px;
+    border: 1px solid red;
+    right: 66px;
+    margin-top: 296px;
+    z-index: 120;
+}
 
+.nextfour {
+    position: absolute;
+    height: 25px;
+    width: 55px;
+    border: 1px solid red;
+    right: 66px;
+    margin-top: 264px;
+    z-index: 120;
+}
 .onboard img {
 	height: 507px;
 	margin-top: 120px;
@@ -295,11 +313,26 @@ h5 {
 .ontwo img {
     position: absolute;
     height: 577px;
-    margin-top: 171px;
+    margin-top: 167px;
     z-index: 115;
     left: 4px;
 }
 
+.onthree img {
+    position: absolute;
+    height: 616px;
+    margin-top: 123px;
+    z-index: 115;
+    left: 17px;
+}
+
+.onfour img {
+    position: absolute;
+    height: 616px;
+    margin-top: 127px;
+    z-index: 115;
+    left: -9px;
+}
 .cardtitle {
 	text-align: center;
 	margin-top: 10px;
