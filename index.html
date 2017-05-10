@@ -267,7 +267,7 @@
 				<h3 class="PhosphateRRInline">Adventure List</h3>
 			</div>
 			<div class = "ad-list-locations">
-				<div class = "location-container">
+				<div class = "location-container link slideup" page-load = "map-info">
 					<img src="images/clothespin10.jpg" alt="Public Art" height="80" width="80">
 					<div class = "location-details">
 						<p>Clothespin (1976)</p>
@@ -418,9 +418,9 @@
 						<h5>Douglas</h5>
 						<h5><span class = "size-emphasis">48</span> pts</h5>
 					</div>
-					<div class = "profile-container">
+					<div class = "profile-container link slideup" page-load = "profile-details">
 						<img src="images/monster.png">
-						<h5>Douglas</h5>
+						<h5>Erik Martin</h5>
 						<h5><span class = "size-emphasis">48</span> pts</h5>
 					</div>
 					<div class = "profile-container">
@@ -480,6 +480,69 @@
 						<h5><span class = "size-emphasis">48</span> pts</h5>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div id = "profile-details" class = "sc">
+			<div class = "character">
+				<div class = "character-details back-left back-prize back link backdown" page-load="profiles"">
+					<img class = "back-button" src = "images/Back_Blue.png">
+				</div>
+				<div class = "character-details center-monster">
+					<img class = "monster-icon" src = "images/monster.png">
+				</div>
+				<div class = "character-details prize-right back-prize">
+					<img class = "prize-button" src = "images/Prize.png">
+				</div>
+			</div>
+			<div class = "character bottom-border">
+				<div class = "character-details back-prize"></div>
+				<div class = "character-details center-text">
+					<h3 class="PhosphateRRInline erik-martin">Erik Martin</h3>
+				</div>
+				<div class = "character-details prize-right back-prize">
+					<img class = "edit-button" src = "images/Edit.png">
+				</div>
+			</div>
+			<div class = "points">
+				<h4>POINTS</h4>
+				<div class = "points-container">
+					<h3 class = "points-number">250</h3>
+					<h4 class = "light">total</h4>
+				</div>
+				<div class = "points-container center-points">
+					<h3 class = "points-number">150</h3>
+					<h4 class = "light">available</h4>
+				</div>
+				<div class = "points-container">
+					<h3 class = "points-number">100</h3>
+					<h4 class = "light">used</h4>
+				</div>
+			</div>
+			<div class = "keystones-prizes">
+				<div class = "keystones-prizes-container">
+					<h4>KEYSTONES</h4>
+					<h6>3</h6>
+					<h4 class = "light">collected</h4>
+				</div>
+				<div class = "keystones-prizes-container border-left">
+					<h4>PRIZES</h4>
+					<h6>1</h6>
+					<h4 class = "light">available</h4>
+				</div>
+			</div>
+		</div>
+		<div id = "map-info" class = "sc">
+			<div class="art-info">
+				<div class="back link backdown xicon" page-load="adventure-list"></div>
+				<div class="link slideup getthere" page-load="directions"></div>
+				<img src= "images/map_info.png" alt="map and art info">
+			</div>
+		</div>
+		<div id = "directions" class = "sc">
+			<div class="gmaps">
+				<div class="back link backdown mapsback" page-load="adventure-list"></div>
+				<div class="link slideup letsgo" page-load="directions"></div>
+				<img src= "images/Directions (Google Maps).png" alt="google maps directions">
 			</div>
 		</div>
 	</body>

@@ -91,7 +91,8 @@ body{
 #player-choice, 
 #avatar-choice,
 #avatar-edit,
-#video-choice {
+#video-choice,
+#profile-details {
 	margin-top: 0;
 	margin-bottom: 8px;
 	margin-left: 8px;
@@ -103,6 +104,10 @@ body{
 	border-radius: 12px;
 	padding: 8px;
 	background: linear-gradient(131.49deg, rgba(255,255,255,0.72) 0%, #FFFCF8 100%);
+}
+
+#profile-details {
+	height: calc(67% - 36px);
 }
 
 #player-onboard, #player-onboard2, #player-onboard3, #player-onboard4, #pop-nav {
@@ -192,7 +197,8 @@ p {
 	height: 126px;
 }
 
-.profile-container {
+.profile-container,
+.character-details {
 	margin-top: 6px;
 	width: 33.33%;
 	text-align: center;
@@ -202,6 +208,49 @@ p {
 .profile-container img {
 	height: 65px;
 }
+.back-left {
+	text-align: left;
+	margin-left: 12px;
+	margin-top: 13px;
+}
+
+.prize-right {
+	text-align: right;
+	margin-right: 2px;
+	margin-top: 0;
+}
+
+.back-prize {
+	width: 12%;
+}
+
+.center-monster {
+	width: 70%;
+	margin-top: -140px;
+}
+
+.center-text {
+	width: 70%;
+}
+
+.back-button {
+	height: 21px;
+}
+
+.prize-button {
+	height: 36px;
+}
+
+.edit-button {
+	margin-top: 15px;
+	margin-right: -10px;
+	height: 15px;
+}
+
+.monster-icon {
+	height: 183px;
+}
+
 
 h2 {
 	font-size: 48px;
@@ -215,14 +264,42 @@ h3{
 	color: #006C90;
 	margin: 0
 }
+h4 {
+	font-size: 18px;
+	margin: 0;
+}
 h5 {
 	font-size: 14px;
 	margin: 0;
 }
-
-.size-emphasis {
+h6 {
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+.size-emphasis,
+.points-number,
+h6 {
 	font-size: 20px;
 }
+
+.points-number {
+	line-height: normal;
+	padding: 0;
+}
+
+.light {
+	font-weight: 100;
+}
+
+.center-points {
+	border-left: 1px solid #979797;
+	border-right: 1px solid #979797;
+}
+
+.points-number {
+	color: #006C90;
+}
+
 
 .hide img {
 	display: none;
@@ -246,7 +323,6 @@ h5 {
 	position: absolute;
     height: 25px;
     width: 55px;
-    border: 1px solid red;
     right: 73px;
     margin-top: 250px;
 }
@@ -255,7 +331,6 @@ h5 {
     position: absolute;
     height: 25px;
     width: 55px;
-    border: 1px solid red;
     right: 75px;
     margin-top: 281px;
     z-index: 120;
@@ -265,7 +340,6 @@ h5 {
     position: absolute;
     height: 25px;
     width: 55px;
-    border: 1px solid red;
     right: 75px;
     margin-top: 281px;
     z-index: 120;
@@ -275,7 +349,6 @@ h5 {
     position: absolute;
     height: 25px;
     width: 55px;
-    border: 1px solid red;
     right: 83px;
     margin-top: 280px;
     z-index: 120;
@@ -552,6 +625,125 @@ input:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
   animation:inputHighlighter 0.3s ease;
+}
+
+.character {
+	height: 51px;
+	position: relative;
+}
+
+.none {
+	margin-top: 1px;
+}
+
+.erik-martin {
+	line-height: normal;
+	padding: 0;
+}
+
+.bottom-border {
+	border-bottom: 1px solid #304860;
+}
+
+.points {
+	height: 84px;
+	border-bottom: 1px solid #304860;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.points h4 {
+	text-align: center;
+	padding-bottom: 8px;
+	color: #006C90;
+}
+
+.points-container {
+	width: 33%;
+	text-align: center;
+	float: left;
+}
+
+.keystones-prizes {
+	height: 200px;
+}
+
+.keystones-prizes-container {
+	margin-top: 40px;
+	width: 49.5%;
+	text-align: center;
+	float: left;
+}
+
+.keystones-prizes-container h4,
+.keystones-prizes-container h6 {
+	color: #006C90;
+}
+
+.keystones-prizes-container.border-left h4,
+.keystones-prizes-container.border-left h6 {
+	color: #F8595A;
+}
+
+.border-left {
+	border-left: 1px solid #979797;
+}
+
+.art-info {
+	position: relative;
+	height: 667px;
+	width:375px;
+	bottom: 580px;
+}
+
+.art-info img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.gmaps {
+    position: relative;
+    height: 667px;
+    width: 375px;
+    bottom: 667px;
+}
+
+.gmaps img{
+    width: 100%;
+    height: auto;
+}
+
+.xicon {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 8px;
+    right: 15px;
+}
+
+.mapsback{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 28px;
+    left: 5px;
+}
+
+.getthere {
+    position: absolute;
+    width: 94px;
+    height: 25px;
+    top: 50px;
+    right: 15px;
+}
+
+.letsgo {
+    position: absolute;
+    width: 94px;
+    height: 25px;
+    bottom: 25px;
+    left: 140px;
 }
 
 /* ANIMATIONS ================ */
